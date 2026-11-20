@@ -1,0 +1,7 @@
+{
+  "editorScript": [
+    "file:difference-checker.js",
+    "file:encode-decode.js",
+    "file:json-formatter.js"
+  ]
+}

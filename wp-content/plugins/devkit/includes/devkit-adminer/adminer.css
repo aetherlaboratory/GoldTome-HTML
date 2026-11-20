@@ -1,0 +1,90 @@
+:root {
+  --pri: #2271b1;
+  --alt: #f6f7f7;
+  --header: white;
+  --border: #aaa;
+  --border-alt: #e5e5e5;
+  --input: white;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  overflow-x: hidden !important;
+}
+
+@media (min-width: 880px) {
+  #content {
+    padding: 0;
+    margin: 2em 0 0 21.5em;
+  }
+}
+
+#content h2 {
+  background-color: white;
+  padding: 0.8em 0em;
+  margin-left: 0;
+  margin-right: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+#breadcrumb {
+  width: 100%;
+  padding: 0.3rem 0em;
+  margin-left: 0.5rem;
+  background-color: white;
+}
+input:not(.icon) {
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--border) !important;
+}
+select {
+  padding: 0.35rem;
+}
+input[type="submit"] {
+  background-color: var(--pri);
+  color: white;
+  border: 0 !important;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+#logout {
+  background-color: var(--alt);
+  color: black;
+}
+a {
+  color: var(--pri);
+}
+a:visited {
+  color: var(--pri);
+}
+.scrollable:has(table) {
+  padding-right: 2rem;
+}
+table {
+  width: 100%;
+}
+table thead td, table thead th {
+  background: white;
+}
+table th {
+  background: var(--alt);
+  text-align: left;
+}
+#menu {
+  background-color: var(--alt);
+  min-height: calc(100vh - 2rem);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+#menu h1 {
+  margin-top: auto;
+  order: 100;
+}
+#tables a, #tables span {
+  background: transparent;
+}
+.scrollable {
+  overflow-x: auto !important;
+}
